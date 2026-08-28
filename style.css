@@ -40,11 +40,11 @@ a {
     /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #3c3333; */
     font-size: 25px;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     /* background-color: #849088; */
     background-color: gainsboro ;
 }
-.form-section {
+form {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -52,7 +52,8 @@ a {
     border: 1px;
     /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088; */
     background-color: whitesmoke;
-
+    padding: 20px;
+    gap: 30px;
 }
 .footer {
     width: auto;
@@ -79,10 +80,24 @@ a {
     gap: 200px;
 }
 
+input {
+    /* field-sizing: content; */
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088a4;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(164, 185, 178);
+    border-radius: 10px;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
 
 
-/* this is not a real online service. you know you need something
- like this in your life to help you realize your deepest dreams. sign up now to get you started.
- 
- 
- */
+}
+.footer {
+    padding: 20px;
+}
