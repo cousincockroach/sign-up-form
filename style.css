@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.img-container {
+    display: flex;
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 46vw;
+    color: white;
+    justify-content: center;
+    align-items: end;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.parent-container {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-weight: 200;
+
+}
+a {
+    color: aliceblue;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    width: 54vw;
+    height: 30vh;
+    border: 1px;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #3c3333; */
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    /* background-color: #849088; */
+    background-color: gainsboro ;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 40vh;
+    border: 1px;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088; */
+    background-color: whitesmoke;
+
+}
+.footer {
+    width: auto;
+    height: 30vh;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088a4; 
+    border: 1px;
+    /* background-color: #849088; */
+    background-color: gainsboro ;
+
+    
+}
+.names {
+    display: flex;
+    gap: 200px;
+}
+
+.details {
+    display: flex;
+    gap: 200px;
+}
+
+.password {
+    display: flex;
+    gap: 200px;
+}
+
+
+
+/* this is not a real online service. you know you need something
+ like this in your life to help you realize your deepest dreams. sign up now to get you started.
+ 
+ 
+ */
