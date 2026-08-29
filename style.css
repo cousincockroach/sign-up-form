@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;      
-    height: 100dvh;     
-    overflow: hidden;   
+    min-width: 100dvw;      
+    min-height: 100dvh;        
     box-sizing: border-box;
+    overflow:hidden;
     
 }
 
@@ -14,12 +14,12 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    width: 46vw;
+    min-width: 50vw;
     color: white;
     justify-content: center;
     align-items: end;
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 15px;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     font-weight: 300;
 }
@@ -28,6 +28,8 @@ body {
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     font-weight: 200;
+    box-sizing: border-box;
+    min-width: auto;
 
 }
 a {
@@ -37,8 +39,8 @@ a {
 .header {
     display: flex;
     align-items: flex-end;
-    padding: 10px;
-    width: 54vw;
+    padding:30px;
+    width: auto;
     height: 30vh;
     border: 1px;
     /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #3c3333; */
@@ -47,6 +49,7 @@ a {
     font-weight: 400;
     /* background-color: #849088; */
     background-color: gainsboro ;
+    box-sizing: border-box;
 }
 form {
     display: flex;
@@ -56,8 +59,10 @@ form {
     border: 1px;
     /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088; */
     background-color: whitesmoke;
-    padding: 20px;
+    padding: 30px;
     gap: 30px;
+    box-sizing: border-box;
+    flex: 1;
 }
 .footer {
     width: auto;
@@ -66,6 +71,7 @@ form {
     border: 1px;
     /* background-color: #849088; */
     background-color: gainsboro ;
+    padding:30px;
 
     
 }
@@ -86,22 +92,30 @@ form {
 
 input {
     /* field-sizing: content; */
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088a4;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-weight: 300;
+
 }
 
 button {
     width: 200px;
     height: 50px;
-    background-color: rgb(164, 185, 178);
+    background-color: rgb(61, 112, 95);
     border-radius: 10px;
+    border:1px;
     color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
 
 
 }
 .footer {
-    padding: 20px;
+    padding: 30px;
+}
+h2 {
+    font-weight: 400;
 }
