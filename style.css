@@ -1,27 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 100dvw;      
+    width: 100%;
     min-height: 100dvh;        
     box-sizing: border-box;
-    overflow:hidden;
-    
-}
-
-.img-container {
-    display: flex;
-    background-image: url("photo.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    min-width: 50vw;
-    color: white;
-    justify-content: center;
-    align-items: end;
-    box-sizing: border-box;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
-    font-weight: 300;
 }
 
 .parent-container {
@@ -29,93 +11,121 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     font-weight: 200;
     box-sizing: border-box;
-    min-width: auto;
+    width: 100%;
+    min-height: 100dvh;
+}
 
+.img-container {
+    display: flex;
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 300;
 }
-a {
-    color: aliceblue;
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;  
+    width: 50vw;
+    min-height: 100dvh;
+    box-sizing: border-box;
 }
+
 
 .header {
     display: flex;
     align-items: flex-end;
-    padding:30px;
-    width: auto;
-    height: 30vh;
-    border: 1px;
-    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #3c3333; */
+    padding: 30px;
     font-size: 25px;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
-    /* background-color: #849088; */
-    background-color: gainsboro ;
+    background-color: gainsboro;
     box-sizing: border-box;
+    flex: 2;                 
 }
+
+
 form {
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: 40vh;
-    border: 1px;
-    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088; */
     background-color: whitesmoke;
     padding: 30px;
-    gap: 30px;
+    gap: 20px;
     box-sizing: border-box;
-    flex: 1;
+    flex: 5;
 }
+
 .footer {
-    width: auto;
-    height: 30vh;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088a4; 
     border: 1px;
-    /* background-color: #849088; */
-    background-color: gainsboro ;
-    padding:30px;
-
-    
-}
-.names {
-    display: flex;
-    gap: 200px;
+    background-color: gainsboro;
+    padding: 30px;
+    box-sizing: border-box;
+    flex: 3;                 
 }
 
-.details {
-    display: flex;
-    gap: 200px;
-}
-
+.names, 
+.details, 
 .password {
     display: flex;
-    gap: 200px;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-input {
-    /* field-sizing: content; */
-    width: 300px;
+/* input {
+    width: 100%;
+    max-width: 300px;
     height: 30px;
     border-radius: 4px;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #849088a4;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     font-weight: 300;
-
-}
+    box-sizing: border-box;
+} */
 
 button {
     width: 200px;
     height: 50px;
     background-color: rgb(61, 112, 95);
     border-radius: 10px;
-    border:1px;
+    border: 1px;
     color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     font-weight: 500;
-
-
+    cursor: pointer;
 }
-.footer {
-    padding: 30px;
-}
+
 h2 {
     font-weight: 400;
+}
+
+a {
+    color: aliceblue;
+}
+input {
+    width: 300px;
+    max-width: 420px;        
+    height: 48px;            
+    padding: 0 16px;         
+    font-size: 16px;         
+    border-radius: 6px;      
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 10px #c5c5c5, -4px -4px 10px #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    outline: none;           
+}
+
+
+input:focus {
+    border-color: rgb(61, 112, 95);
+    box-shadow: 0 0 0 2px rgba(61, 112, 95, 0.2);
 }
